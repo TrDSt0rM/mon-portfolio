@@ -55,6 +55,7 @@ src/
 ├── components/       # Composants réutilisables (Navbar, TechBadge, Cards...)
 ├── data/             # "Cerveau" des données (skills.ts, projects.ts)
 └── types/            # types globaux
+````
 
 ## 📬 Me Contacter
 

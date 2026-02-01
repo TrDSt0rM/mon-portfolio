@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio - Alex Plociennik
 
-## Getting Started
+![Preview du Portfolio](https://via.placeholder.com/1200x600?text=Capture+d'ecran+de+mon+Portfolio)
+Bienvenue sur le dépôt de mon portfolio personnel. Ce projet met en avant mes compétences, mes projets et mon parcours en tant que développeur. Il est conçu pour être performant, accessible et facile à maintenir.
 
-First, run the development server:
+🔗 **Voir le site en ligne :** [https://alex-plociennik.vercel.app](https://alex-plociennik.vercel.app)
+
+## 🛠️ Stack Technique
+
+Ce projet utilise les dernières technologies du web moderne :
+
+* **Framework :** [Next.js 14](https://nextjs.org/) (App Router)
+* **Langage :** [TypeScript](https://www.typescriptlang.org/) (Typage strict)
+* **Styles :** [Tailwind CSS](https://tailwindcss.com/)
+* **Police :** Crimson Pro (Google Fonts)
+* **Icônes :** Heroicons / SVG personnalisés
+* **Déploiement :** [Vercel](https://vercel.com/)
+* **Qualité de code :** ESLint & Prettier (avec tri automatique des classes Tailwind)
+
+## ✨ Fonctionnalités Clés
+
+* 🎨 **Design System Personnalisé :** Utilisation de variables CSS (`lvl-0` à `lvl-4`) et d'une palette pastel (Blue, Green, Pink, Sage...).
+* 🌗 **Dark Mode & Light Mode :** Gestion native du thème sombre avec Tailwind.
+* 📱 **100% Responsive :** Menu burger sur mobile et grille adaptative.
+* ⚡ **Performance :** Optimisation des images et des polices avec `next/font`.
+* 📂 **Architecture DRY :** Données centralisées dans `src/data` (compétences, projets) pour une mise à jour facile.
+
+## 📦 Installation & Lancement local
+
+Si vous souhaitez cloner et lancer ce projet sur votre machine :
+
+1.  **Cloner le dépôt :**
+    ```bash
+    git clone [https://github.com/TON-PSEUDO/portfolio.git](https://github.com/TON-PSEUDO/portfolio.git)
+    cd portfolio
+    ```
+
+2.  **Installer les dépendances :**
+    ```bash
+    npm install
+    ```
+
+3.  **Lancer le serveur de développement :**
+    ```bash
+    npm run dev
+    ```
+
+4.  Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+
+## 📂 Structure du Projet
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+src/
+├── app/              # Pages et Layouts (Next.js App Router)
+├── components/       # Composants réutilisables (Navbar, TechBadge, Cards...)
+├── data/             # "Cerveau" des données (skills.ts, projects.ts)
+└── types/            # types globaux

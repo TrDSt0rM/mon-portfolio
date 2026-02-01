@@ -61,7 +61,7 @@ src/
 
 Je suis à la recherche d'un stage d'une durée de 3 mois minimum à partir du 1er avril 2026, suivi, dans l'idéal, d'une alternance d'un an en Master 2. N'hésitez pas à me contacter !
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ton-profil)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alex-plociennik-09a15b250/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alex.plociennik.ap@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=html5&logoColor=white)](https://alex-plociennik.vercel.app)
 

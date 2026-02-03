@@ -21,8 +21,9 @@ export default function Navbar() {
 
   // Liste des liens de navigation
   const navLinks = [
-    { name: "Compétences", href: "/#skills" },
     { name: "Projets", href: "/#projets" },
+    { name: "Compétences", href: "/#skills" },
+    { name: "À propos", href: "/#about-me" },
     { name: "Contact", href: "/#contact" },
   ];
 
@@ -65,7 +66,7 @@ export default function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded-md p-2 text-light-lvl-4 hover:bg-light-lvl-1 focus:outline-none dark:text-dark-lvl-4 dark:hover:bg-dark-lvl-1"
+            className="rounded-full border border-light-lvl-1 bg-light-lvl-2 px-5 py-2 text-sm font-medium text-light-lvl-4 shadow-lg transition-transform hover:scale-105 hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-dark-lvl-4 dark:hover:border-pastel-blue"
           >
             <span className="sr-only">Ouvrir le menu</span>
             {isOpen ? (

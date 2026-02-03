@@ -19,10 +19,21 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-light-lvl-0 text-light-lvl-4 transition-colors duration-300 dark:bg-dark-lvl-0 dark:text-dark-lvl-4">
       {/* --- SECTION HÉROS --- */}
-      <section className="mb-12 w-full bg-gradient-to-br from-pastel-light-peach via-pastel-light-purple to-pastel-light-blue py-24 text-center font-semibold text-dark-lvl-4 shadow-xl dark:from-pastel-peach dark:via-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4">
-        <h1 className="mb-6 text-5xl font-bold">Bonjour, je suis Alex</h1>
-        <p className="mx-auto mb-8 max-w-2xl px-4 text-xl text-dark-lvl-4 dark:text-light-lvl-4">
-          Description
+      <section className="mb-12 w-full bg-gradient-to-br from-pastel-light-peach via-pastel-light-purple to-pastel-light-blue py-24 text-center text-dark-lvl-4 shadow-xl dark:from-pastel-peach dark:via-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4">
+        <h1 className={`${crimson.className} mb-6 text-5xl font-bold`}>
+          Alex Plociennik
+        </h1>
+        <h2 className={`${crimson.className} mb-6 text-5xl font-semibold`}>
+          Concepteur Développeur d'Applications
+        </h2>
+        <p className="mx-auto mb-8 max-w-2xl text-balance px-4 text-lg leading-relaxed text-dark-lvl-4 dark:text-light-lvl-4">
+          Étudiant en Master TIIL-A à l'UBO. Je conçois des solutions
+          logicielles robustes et performantes. Polyvalent, je maîtrise aussi
+          bien l'écosystème <span className="font-bold">Java</span> que le{" "}
+          <span className="font-bold">développement web moderne</span>{" "}
+          (Next.js). Je suis à la recherche d'un{" "}
+          <span className="font-bold">stage</span> de de 3 mois minimun débutant
+          en <span className="font-bold">avril 2026</span>.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
@@ -41,40 +52,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- SECTION COMPÉTENCES --- */}
-      <section className="mb-20 w-full max-w-5xl px-4">
-        <h2
-          className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
-        >
-          Ma Stack Technique
-        </h2>
-
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {skills.map((skillGroup) => (
-            <div
-              key={skillGroup.category}
-              className="rounded-xl border border-light-lvl-2 bg-light-lvl-1 p-6 shadow-sm transition hover:shadow-md dark:border-dark-lvl-2 dark:bg-dark-lvl-1"
-            >
-              <h3 className="mb-4 border-b border-light-lvl-2 pb-2 text-lg font-bold text-pastel-light-blue dark:border-dark-lvl-2">
-                {skillGroup.category}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skillGroup.items.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-light-lvl-2 bg-light-lvl-1 px-3 py-1 text-sm font-medium text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-0 dark:text-dark-lvl-3"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* --- SECTION PROJETS --- */}
-      <div id="projets" className="mb-20 w-full max-w-5xl px-4">
+      <div id="projets" className="mb-20 w-full max-w-5xl scroll-mt-20 px-4">
         <h2
           className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
         >
@@ -89,7 +68,6 @@ export default function Home() {
             >
               {/* Image du projet */}
               <div className="relative mb-4 h-48 w-full overflow-hidden rounded-lg bg-light-lvl-2 dark:bg-dark-lvl-2">
-                {/* On utilise une balise img simple pour commencer */}
                 <img
                   src={project.image}
                   alt={project.title}
@@ -126,6 +104,65 @@ export default function Home() {
           {/* Fin de la boucle */}
         </div>
       </div>
+
+      {/* --- SECTION COMPÉTENCES --- */}
+      <section id="skills" className="mb-20 w-full max-w-5xl scroll-mt-20 px-4">
+        <h2
+          className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
+        >
+          Ma Stack Technique
+        </h2>
+
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {skills.map((skillGroup) => (
+            <div
+              key={skillGroup.category}
+              className="rounded-xl border border-light-lvl-2 bg-light-lvl-1 p-6 shadow-sm transition hover:shadow-md dark:border-dark-lvl-2 dark:bg-dark-lvl-1"
+            >
+              <h3 className="mb-4 border-b border-light-lvl-2 pb-2 text-lg font-bold text-pastel-light-blue dark:border-dark-lvl-2">
+                {skillGroup.category}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {skillGroup.items.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-light-lvl-2 bg-light-lvl-1 px-3 py-1 text-sm font-medium text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-0 dark:text-dark-lvl-3"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* --- À PROPOS --- */}
+      <section
+        id="about-me"
+        className="mb-20 w-full max-w-5xl scroll-mt-20 px-4"
+      >
+        <h2
+          className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
+        >
+          À Propos de Moi
+        </h2>
+        <div className="mx-auto mb-8 text-balance rounded-xl border border-light-lvl-2 bg-light-lvl-1 px-4 py-4 text-center text-lg leading-relaxed text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4">
+          <p>
+            Étudiant en première année de Master TIIL-A (Technologies de
+            l'Information et Ingénierie du Logiciel) à l'Université de Bretagne
+            Occidentale, Je suis à la recherche d'un stage d'une durée de 3 mois
+            minimum à partir du 1er avril 2026, suivi, dans l'idéal, d'une
+            alternance d'un an en Master 2.
+          </p>
+          <p>
+            Je suis passionné par le développement Web et la conception de
+            solutions logicielles innovantes. Mon objectif est de contribuer
+            activement à des projets stimulants tout en continuant à développer
+            mes compétences techniques et professionnelles.
+          </p>
+        </div>
+      </section>
 
       {/* --- SECTION CONTACT --- */}
       <section

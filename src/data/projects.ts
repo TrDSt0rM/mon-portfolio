@@ -29,7 +29,7 @@ export const projects: Project[] = [
     description: "Développement d'une application Java par groupe de 3.",
     technologies: ["Java", "JavaFX", "Eclipse", "GitLab"],
     link: "https://github.com/TrDSt0rM/",
-    image: "/projet2.jpg",
+    image: "/system-vod-screen01.jpg",
   },
   {
     id: 3,
@@ -45,6 +45,6 @@ export const projects: Project[] = [
       "mysql",
     ],
     link: "https://github.com/TrDSt0rM/Olympix",
-    image: "/projet1.jpg",
+    image: "/olympix-screen01.png",
   },
 ];

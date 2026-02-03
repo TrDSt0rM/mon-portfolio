@@ -1,9 +1,20 @@
+/**
+ * @type {import('next').NextPage}
+ * @file src/app/page.tsx
+ * @author Alex Plociennik
+ * @date 2026-01-24 last modified: 2026-02-01
+ * @description Page d'accueil du portfolio
+ */
 import { projects } from "@/data/projects";
 import { skills } from "@/data/skills";
 import { Crimson_Pro } from "next/font/google";
 
 const crimson = Crimson_Pro({ subsets: ["latin"], weight: "700" });
 
+/**
+ * Page d'accueil du portfolio affichant la section héros, compétences, projets et contact.
+ * @returns la page d'accueil complète du portfolio.
+ */
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center bg-light-lvl-0 text-light-lvl-4 transition-colors duration-300 dark:bg-dark-lvl-0 dark:text-dark-lvl-4">

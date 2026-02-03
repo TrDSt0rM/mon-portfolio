@@ -1,4 +1,5 @@
 /**
+ * @type {Array<{category: string, items: string[]}>}
  * @file src/data/skills.ts
  * @author : Alex Plociennik
  * @date : 2026-01-24

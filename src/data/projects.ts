@@ -1,7 +1,8 @@
 /**
+ * @type {import('@/types').Project[]}
  * @file src/data/projects.ts
  * @author Alex Plociennik
- * @date 2026-01-24
+ * @date 2026-01-24 last modified: 2026-02-03
  * @description liste des projets pour le portfolio
  */
 import { Project } from "@/types";

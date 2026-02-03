@@ -1,4 +1,5 @@
 /**
+ * @type {import("react").FC<{children: React.ReactNode}>}
  * @file /src/app/providers.tsx
  * @author Alex Plociennik
  * @date 2026-01-24
@@ -9,6 +10,11 @@
 import { ThemeProvider } from "next-themes";
 import React, { useState, useEffect } from "react";
 
+/**
+ * Composant fournisseur de contexte pour l'application, gérant le thème (clair/sombre).
+ * @param param0 Objet contenant les enfants React à rendre.
+ * @returns Le fournisseur de thème englobant les enfants.
+ */
 export function Providers({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 

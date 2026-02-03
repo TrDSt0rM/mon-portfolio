@@ -7,11 +7,17 @@ import "./globals.css"; // import du css
 const dmSans = DM_Sans({ subsets: ["latin"] });
 const crimsonPro = Crimson_Pro({ subsets: ["latin"], weight: "700" });
 
+// --- MÉTADONNÉES GLOBALES DE L'APPLICATION --------------------------
 export const metadata: Metadata = {
   title: "Mon Portfolio",
   description: "Portfolio développeur Fullstack",
 };
 
+/**
+ * Layout principal de l'application, incluant la Navbar et le Footer.
+ * @param param0 Objet contenant les enfants React à rendre dans le layout.
+ * @returns Le layout complet avec la Navbar, le contenu de la page et le Footer.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

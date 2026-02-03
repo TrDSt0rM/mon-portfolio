@@ -125,7 +125,7 @@ export default function Home() {
           <h2 className="mb-6 text-3xl font-bold">Contact</h2>
           <p className="mb-8 text-lg text-gray-400">Description</p>
 
-          <div className="flex justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
               href="mailto:alex.plociennik.ap@gmail.com"
               className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"

@@ -40,7 +40,7 @@ Si vous souhaitez cloner et lancer ce projet sur votre machine :
 1.  **Cloner le dépôt :**
 
     ```bash
-    git clone [https://github.com/TrDSt0rM/mon-portfolio.git](https://github.com/TrDSt0rM/mon-portfolio.git)
+    git clone https://github.com/TrDSt0rM/mon-portfolio.git
     cd portfolio
     ```
 
@@ -118,7 +118,7 @@ If you wish to clone and run this project on your machine:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/TrDSt0rM/mon-portfolio.git](https://github.com/TrDSt0rM/mon-portfolio.git)
+    git clone https://github.com/TrDSt0rM/mon-portfolio.git
     cd portfolio
     ```
 

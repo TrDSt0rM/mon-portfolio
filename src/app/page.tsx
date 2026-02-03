@@ -32,7 +32,8 @@ export default function Home() {
           bien l'écosystème <span className="font-bold">Java</span> que le{" "}
           <span className="font-bold">développement web moderne</span>{" "}
           (Next.js). Je suis à la recherche d'un{" "}
-          <span className="font-bold">stage</span> de 3 mois minimun débutant en{" "}
+          <span className="font-bold">stage</span> de{" "}
+          <span className="font-bold">3 mois minimun</span> débutant en{" "}
           <span className="font-bold">avril 2026</span>.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
@@ -154,6 +155,7 @@ export default function Home() {
             Occidentale, Je suis à la recherche d'un stage d'une durée de 3 mois
             minimum à partir du 1er avril 2026, suivi, dans l'idéal, d'une
             alternance d'un an en Master 2.
+            <br />
           </p>
           <p>
             Je suis passionné par le développement Web et la conception de
@@ -171,11 +173,14 @@ export default function Home() {
       >
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="mb-6 text-3xl font-bold">Contact</h2>
-          <p className="mb-8 text-lg text-gray-400">Description</p>
+          <p className="mb-8 text-lg text-dark-lvl-3 dark:text-light-lvl-3">
+            Mon profil vous intéresse ? Envoyez-moi un mail.
+          </p>
 
           <div className="flex flex-wrap justify-center gap-6">
             <a
               href="mailto:alex.plociennik.ap@gmail.com"
+              title="Envoyer un mail à alex.plociennik.ap@gmail.com"
               className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
             >
               Me contacter par email

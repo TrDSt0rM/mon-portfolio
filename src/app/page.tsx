@@ -32,8 +32,8 @@ export default function Home() {
           bien l'écosystème <span className="font-bold">Java</span> que le{" "}
           <span className="font-bold">développement web moderne</span>{" "}
           (Next.js). Je suis à la recherche d'un{" "}
-          <span className="font-bold">stage</span> de de 3 mois minimun débutant
-          en <span className="font-bold">avril 2026</span>.
+          <span className="font-bold">stage</span> de 3 mois minimun débutant en{" "}
+          <span className="font-bold">avril 2026</span>.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a

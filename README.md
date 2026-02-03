@@ -8,7 +8,7 @@
 
 # 🚀 Portfolio - Alex Plociennik
 
-<img src="./public/screenshot-portfolio.png" width="600" alt="Capture d'écran Portfolio">
+<img src="./public/screenshot-portolio.png" width="600" alt="Capture d'écran Portfolio">
 Bienvenue sur le dépôt de mon portfolio personnel. Ce projet met en avant mes compétences, mes projets et mon parcours en tant que développeur. Il est conçu pour être performant, accessible et facile à maintenir.
 
 🔗 **Voir le site en ligne :** [https://alex-plociennik.vercel.app](https://alex-plociennik.vercel.app)
@@ -86,7 +86,7 @@ _Fait avec ❤️ par Alex Plociennik._
 
 # 🚀 Portfolio - Alex Plociennik
 
-<img src="./public/screenshot-portfolio.png" width="850" alt="Capture d'écran Portfolio">
+<img src="./public/screenshot-portolio.png" width="600" alt="Capture d'écran Portfolio">
 Welcome to my personal portfolio repository. This project showcases my skills, projects, and journey as a developer. It is designed to be performant, accessible, and easy to maintain.
 
 🔗 **Live Website:** [https://alex-plociennik.vercel.app](https://alex-plociennik.vercel.app)

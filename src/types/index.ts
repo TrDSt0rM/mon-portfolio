@@ -1,9 +1,9 @@
 /**
  * @type {import("./types").Project}
- * @file : types/index.ts
- * @author : Alex Plociennik
- * @date : 2026-01-24
- * @description : definitions de types pour le portfolio
+ * @file types/index.ts
+ * @author Alex Plociennik
+ * @date 2026-01-24
+ * @description definitions de types pour le portfolio
  */
 
 /**

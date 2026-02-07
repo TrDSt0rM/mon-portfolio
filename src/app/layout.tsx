@@ -1,7 +1,15 @@
+/**
+ * @type
+ * @file
+ * @author
+ * @date
+ * @description
+ */
+
 import type { Metadata } from "next";
 import { DM_Sans, Crimson_Pro } from "next/font/google";
 import { Providers } from "./providers";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 import "./globals.css"; // import du css
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
@@ -37,7 +45,7 @@ export default function RootLayout({
           {children}
 
           {/* --- FOOTER (Pied de page) --- */}
-          <footer className="mt-8 w-full border-t border-light-lvl-2 bg-light-lvl-1 pb-6 pt-12 text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-3">
+          <footer className="mt-8 w-full border-t border-light-lvl-2 bg-light-lvl-1 py-10 text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-3">
             <div className="px-4 text-center">
               <p className="mb-2">
                 © 2026 - Alex Plociennik. Tous droits réservés.

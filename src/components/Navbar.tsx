@@ -1,15 +1,17 @@
 /**
- * @type {import('next').NextComponentType}
+ * @type Composant
  * @file src/components/Navbar.tsx
  * @author Alex Plociennik
- * @date 2026-01-24 last modified: 2026-02-03
- * @description Barre de navigation (Navbar) du portfolio
+ * @date 2026-02-07
+ * @description Composant de la barre de naviagation des pages du portfolio
  */
+
 "use client";
 
 import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
+import { navLinks } from "@/data/navigation";
 
 /**
  * Principal composant de la barre de navigation (Navbar) du portfolio.
@@ -18,14 +20,6 @@ import ThemeToggle from "./ThemeToggle";
 export default function Navbar() {
   // État pour le menu mobile
   const [isOpen, setIsOpen] = useState(false);
-
-  // Liste des liens de navigation
-  const navLinks = [
-    { name: "Projets", href: "/#projets" },
-    { name: "Compétences", href: "/#skills" },
-    { name: "À propos", href: "/#about-me" },
-    { name: "Contact", href: "/#contact" },
-  ];
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-light-lvl-2 bg-light-lvl-0/90 shadow-strong backdrop-blur-md transition-all duration-300 dark:border-dark-lvl-2 dark:bg-dark-lvl-0/90">

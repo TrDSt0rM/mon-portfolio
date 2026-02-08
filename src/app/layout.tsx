@@ -7,13 +7,25 @@
  */
 
 import type { Metadata } from "next";
-import { DM_Sans, Crimson_Pro } from "next/font/google";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import "./globals.css"; // import du css
+import { Inter, Crimson_Pro, JetBrains_Mono } from "next/font/google";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
-const crimsonPro = Crimson_Pro({ subsets: ["latin"], weight: "700" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const crimson = Crimson_Pro({
+  subsets: ["latin"],
+  variable: "--font-crimson",
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 // --- MÉTADONNÉES GLOBALES DE L'APPLICATION --------------------------
 export const metadata: Metadata = {
@@ -35,7 +47,7 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
       {/* scroll-smooth permet un défilement fluide quand on clique sur les liens */}
       <body
-        className={`${dmSans.className} min-h-screen bg-light-lvl-0 text-light-lvl-4 dark:bg-dark-lvl-0 dark:text-dark-lvl-4`}
+        className={`${inter.variable} ${crimson.variable} ${jetbrains.variable} flex min-h-screen flex-col bg-light-lvl-0 font-sans text-light-lvl-4 dark:bg-dark-lvl-0 dark:text-dark-lvl-4`}
       >
         <Providers>
           {/* --- NAVBAR (barre de navigation) --- */}
@@ -46,7 +58,7 @@ export default function RootLayout({
 
           {/* --- FOOTER (Pied de page) --- */}
           <footer className="mt-8 w-full border-t border-light-lvl-2 bg-light-lvl-1 py-10 text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-3">
-            <div className="px-4 text-center">
+            <div className="font-tech px-4 text-center">
               <p className="mb-2">
                 © 2026 - Alex Plociennik. Tous droits réservés.
               </p>

@@ -16,6 +16,12 @@ const config: Config = {
   // Thème customisé
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"], // police textes
+        serif: ["var(--font-crimson)", "serif"], // police titres
+        tech: ["var(--font-mono)", "monospace"], // police boutons et stacks
+      },
+
       colors: {
         // --- COULEURS DU THÈME SOMBRE ---
         dark: {

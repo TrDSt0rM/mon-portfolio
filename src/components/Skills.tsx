@@ -55,7 +55,9 @@ export const Skills = () => {
   return (
     <section id="skills" className="mx-auto max-w-5xl px-4 py-10">
       <h2
-        className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
+        className={
+          "mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center font-serif text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4"
+        }
       >
         Mes Compétences Techniques
       </h2>
@@ -69,8 +71,10 @@ export const Skills = () => {
               categoryStyles[catKey]
             }`}
           >
-            {/* Titre de la catégorie (ex: "Développement Web") */}
-            <h3 className={`mb-4 text-xl font-bold ${categoryStyles[catKey]}`}>
+            {/* Titre de la catégorie */}
+            <h3
+              className={`mb-4 font-sans text-xl font-bold ${categoryStyles[catKey]}`}
+            >
               {categoryTitles[catKey]}
             </h3>
 
@@ -79,7 +83,7 @@ export const Skills = () => {
               {skillsByCategory[catKey]?.map((tech) => (
                 <span
                   key={tech}
-                  className={`rounded-full border px-3 py-1 text-sm font-medium transition hover:scale-110 ${categoryStyles[catKey]}`}
+                  className={`font-tech rounded-full border px-2 py-1 text-sm font-medium transition hover:scale-110 ${categoryStyles[catKey]}`}
                 >
                   {tech}
                 </span>

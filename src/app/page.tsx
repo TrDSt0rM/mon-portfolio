@@ -22,13 +22,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center bg-light-lvl-0 pb-10 text-light-lvl-4 transition-colors duration-300 dark:bg-dark-lvl-0 dark:text-dark-lvl-4">
       {/* --- SECTION HÉROS --- */}
       <section className="w-full bg-gradient-to-br from-pastel-light-peach via-pastel-light-purple to-pastel-light-blue pb-20 pt-28 text-center text-dark-lvl-4 shadow-xl dark:from-pastel-peach dark:via-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4">
-        <h1 className={`${crimson.className} mb-6 text-5xl font-bold`}>
+        <h1 className={"mb-6 font-serif text-5xl font-bold"}>
           Alex Plociennik
         </h1>
-        <h2 className={`${crimson.className} mb-6 text-5xl font-semibold`}>
+        <h2 className={"mb-6 font-serif text-5xl font-semibold"}>
           Concepteur Développeur d'Applications
         </h2>
-        <p className="mx-auto mb-8 max-w-2xl text-balance px-4 text-lg leading-relaxed text-dark-lvl-4 dark:text-light-lvl-4">
+        <p className="mx-auto mb-8 max-w-2xl text-balance px-4 font-sans text-lg leading-relaxed text-dark-lvl-4 dark:text-light-lvl-4">
           Étudiant en Master TIIL-A à l'UBO. Je conçois des solutions
           logicielles robustes et performantes. Polyvalent, je maîtrise aussi
           bien l'écosystème <span className="font-bold">Java</span> que le{" "}
@@ -38,7 +38,7 @@ export default function Home() {
           <span className="font-bold">3 mois minimun</span> débutant en{" "}
           <span className="font-bold">avril 2026</span>.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="font-tech flex flex-wrap justify-center gap-4">
           <a
             href="#projets"
             className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
@@ -61,7 +61,9 @@ export default function Home() {
         className="w-full max-w-5xl scroll-mt-20 px-4 pb-10 pt-20"
       >
         <h2
-          className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
+          className={
+            "mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center font-serif text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4"
+          }
         >
           Mes Réalisations
         </h2>
@@ -92,23 +94,23 @@ export default function Home() {
                 {/* --- CONTENU DE LA CARTE --- */}
                 {/* flex-1 permet à cette partie de grandir pour pousser le footer vers le bas */}
                 <div className="flex flex-1 flex-col">
-                  <h3 className="mb-2 text-xl font-bold text-light-lvl-4 dark:text-dark-lvl-4">
+                  <h3 className="mb-2 font-serif text-xl font-bold text-light-lvl-4 dark:text-dark-lvl-4">
                     {project.title}
                   </h3>
 
-                  <p className="mb-4 line-clamp-3 text-sm text-light-lvl-3 dark:text-dark-lvl-3">
+                  <p className="mb-4 line-clamp-3 whitespace-pre-line font-sans text-sm text-light-lvl-3 dark:text-dark-lvl-3">
                     {project.description}
                   </p>
 
                   {/* Les badges technologies */}
-                  <div className="mt-auto flex flex-wrap items-center gap-2">
+                  <div className="font-tech mt-auto flex flex-wrap items-center gap-2">
                     {visibleTags.map((tech) => (
                       <TechBadge key={tech} name={tech} />
                     ))}
 
                     {/* Le badge "+X" si il y en a trop */}
                     {remainingTags > 0 && (
-                      <span className="rounded-full border border-light-lvl-0 bg-light-lvl-2 px-2 py-1 text-xs font-medium text-light-lvl-4 dark:border-dark-lvl-0 dark:bg-dark-lvl-2 dark:text-dark-lvl-4">
+                      <span className="overflow-hidden rounded-full border border-light-lvl-0 bg-light-lvl-2 px-1.5 py-1 text-xs font-medium text-light-lvl-4 dark:border-dark-lvl-0 dark:bg-dark-lvl-2 dark:text-dark-lvl-4">
                         +{remainingTags}
                       </span>
                     )}
@@ -117,7 +119,7 @@ export default function Home() {
 
                 <a
                   href={`/projets/${project.id}`}
-                  className="mt-4 block w-full rounded-lg bg-gradient-to-r from-pastel-light-green to-pastel-light-blue py-2 text-center font-medium text-dark-lvl-4 transition dark:from-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4"
+                  className="font-tech mt-4 block w-full rounded-lg bg-gradient-to-r from-pastel-light-green to-pastel-light-blue py-2 text-center font-medium text-dark-lvl-4 transition dark:from-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4"
                 >
                   Voir le détail
                 </a>
@@ -137,11 +139,13 @@ export default function Home() {
         className="w-full max-w-5xl scroll-mt-20 px-4 pb-20 pt-10"
       >
         <h2
-          className={`${crimson.className} mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4`}
+          className={
+            "mb-8 rounded-full border border-light-lvl-2 bg-light-lvl-1 py-4 text-center font-serif text-2xl font-bold text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4"
+          }
         >
           À Propos de Moi
         </h2>
-        <div className="mx-auto text-balance rounded-xl border border-light-lvl-2 bg-light-lvl-1 px-4 py-4 text-center text-lg leading-relaxed text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4">
+        <div className="mx-auto text-balance rounded-xl border border-light-lvl-2 bg-light-lvl-1 px-4 py-4 text-center font-sans text-lg leading-relaxed text-light-lvl-4 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-4">
           <p className="py-2">
             Étudiant en première année de Master TIIL-A (Technologies de
             l'Information et Ingénierie du Logiciel) à l'Université de Bretagne
@@ -164,16 +168,16 @@ export default function Home() {
         className="w-full bg-gradient-to-tr from-pastel-light-purple via-pastel-light-pink to-pastel-light-peach py-10 text-center text-light-lvl-0 dark:from-pastel-purple dark:via-pastel-pink dark:to-pastel-peach dark:text-dark-lvl-0"
       >
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="mb-6 text-3xl font-bold">Contact</h2>
-          <p className="mb-8 text-lg text-dark-lvl-3 dark:text-light-lvl-3">
+          <h2 className="mb-6 font-serif text-3xl font-bold">Contact</h2>
+          <p className="fotn-sans mb-8 text-lg text-dark-lvl-3 dark:text-light-lvl-3">
             Mon profil vous intéresse ? Envoyez-moi un mail.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="font-tech flex flex-wrap justify-center gap-6">
             <a
               href="mailto:alex.plociennik.ap@gmail.com"
               title="Envoyer un mail à alex.plociennik.ap@gmail.com"
-              className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
+              className="w-60 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
             >
               Me contacter par email
             </a>
@@ -181,7 +185,7 @@ export default function Home() {
             <a
               href="https://linkedin.com/in/alex-plociennik-09a15b250/"
               target="_blank"
-              className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
+              className="w-60 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
             >
               LinkedIn
             </a>

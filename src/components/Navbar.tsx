@@ -22,7 +22,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-light-lvl-2 bg-light-lvl-0/90 shadow-strong backdrop-blur-md transition-all duration-300 dark:border-dark-lvl-2 dark:bg-dark-lvl-0/90">
+    <nav className="fixed top-0 z-50 w-full border-b border-light-lvl-2 bg-light-lvl-0/90 font-sans shadow-strong backdrop-blur-md transition-all duration-300 dark:border-dark-lvl-2 dark:bg-dark-lvl-0/90">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* ==================== LOGO ==================== */}
         <Link

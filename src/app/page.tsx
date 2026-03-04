@@ -38,7 +38,7 @@ export default function Home() {
           <span className="font-bold">3 mois minimun</span> débutant en{" "}
           <span className="font-bold">avril 2026</span>.
         </p>
-        <div className="font-tech flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 font-tech">
           <a
             href="#projets"
             className="w-56 rounded-full border border-light-lvl-2 bg-light-lvl-0 py-3 text-center font-bold text-pastel-light-blue shadow-lg transition hover:border-pastel-light-blue dark:border-dark-lvl-1 dark:bg-dark-lvl-2 dark:text-pastel-blue dark:hover:border-pastel-blue"
@@ -103,7 +103,7 @@ export default function Home() {
                   </p>
 
                   {/* Les badges technologies */}
-                  <div className="font-tech mt-auto flex flex-wrap items-center gap-2">
+                  <div className="mt-auto flex flex-wrap items-center gap-2 font-tech">
                     {visibleTags.map((tech) => (
                       <TechBadge key={tech} name={tech} />
                     ))}
@@ -119,7 +119,7 @@ export default function Home() {
 
                 <a
                   href={`/projets/${project.id}`}
-                  className="font-tech mt-4 block w-full rounded-lg bg-gradient-to-r from-pastel-light-green to-pastel-light-blue py-2 text-center font-medium text-dark-lvl-4 transition dark:from-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4"
+                  className="mt-4 block w-full rounded-lg bg-gradient-to-r from-pastel-light-green to-pastel-light-blue py-2 text-center font-tech font-medium text-dark-lvl-4 transition dark:from-pastel-purple dark:to-pastel-blue dark:text-light-lvl-4"
                 >
                   Voir le détail
                 </a>
@@ -173,7 +173,7 @@ export default function Home() {
             Mon profil vous intéresse ? Envoyez-moi un mail.
           </p>
 
-          <div className="font-tech flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 font-tech">
             <a
               href="mailto:alex.plociennik.ap@gmail.com"
               title="Envoyer un mail à alex.plociennik.ap@gmail.com"

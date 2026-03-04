@@ -47,7 +47,7 @@ export default function RootLayout({
     <html lang="fr" className="scroll-smooth" suppressHydrationWarning>
       {/* scroll-smooth permet un défilement fluide quand on clique sur les liens */}
       <body
-        className={`${inter.variable} ${crimson.variable} ${jetbrains.variable} flex min-h-screen flex-col bg-light-lvl-0 font-sans text-light-lvl-4 dark:bg-dark-lvl-0 dark:text-dark-lvl-4`}
+        className={`${inter.variable} ${crimson.variable} ${jetbrains.variable} m-0 flex min-h-screen flex-col bg-light-lvl-0 font-sans text-light-lvl-4 dark:bg-dark-lvl-0 dark:text-dark-lvl-4`}
       >
         <Providers>
           {/* --- NAVBAR (barre de navigation) --- */}
@@ -58,7 +58,7 @@ export default function RootLayout({
 
           {/* --- FOOTER (Pied de page) --- */}
           <footer className="mt-8 w-full border-t border-light-lvl-2 bg-light-lvl-1 py-10 text-light-lvl-3 dark:border-dark-lvl-2 dark:bg-dark-lvl-1 dark:text-dark-lvl-3">
-            <div className="font-tech px-4 text-center">
+            <div className="px-4 text-center font-tech">
               <p className="mb-2">
                 © 2026 - Alex Plociennik. Tous droits réservés.
               </p>

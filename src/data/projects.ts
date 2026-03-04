@@ -35,7 +35,7 @@ export const projects: Project[] = [
         label: "Voir le code source Serveur (GitHub)",
       },
     ],
-    image: "/votio-screenshot.png",
+    image: "/votio-screen.png",
   },
   {
     id: 5,
